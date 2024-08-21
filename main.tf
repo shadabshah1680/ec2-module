@@ -8,6 +8,6 @@ resource "null_resource" "example" {
 #   }
   
   provisioner "local-exec" {
-    command = "${ec2_config} echo Hello, World!"
+    command = "${var.ec2_config} echo Hello, World!"
   }
 }
